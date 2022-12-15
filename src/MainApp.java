@@ -1,36 +1,31 @@
+import com.sun.security.jgss.GSSUtil;
+
 import java.sql.SQLOutput;
 
 public class MainApp {
 
     public static void main(String[] args) {
 
-        // Liczby całkowite
+        // Operatory matematyczne
+        double a = 10;
+        double b = 4;
+        System.out.println(10 + 10);
+        System.out.println(10 - 10);
+        System.out.println(10 * 10);
+        System.out.println(10 / 10);
+        System.out.println(a / b);
 
-        byte b;
-        short s;
-        int i;
-        long l = 2000000000000L;
+        // Operatory porównania
+        int numOne = 1;
+        int numTwo = 2;
+        System.out.println(numOne < numTwo);
+        System.out.println(numOne > numTwo);
+        System.out.println(numOne == numTwo);
+        System.out.println(numOne != numTwo);
 
-        int number;     // deklaracja zmiennej
-        number = 10;    // inicjalizacja zmiennej
-        System.out.println(number);
+        // Operatory logiczne
+        System.out.println(numOne > numTwo || numOne == 1);     // || - lub
+        System.out.println(numOne < numTwo && numOne != 1);     // && - i
 
-        // Liczby zmiennoprzecinkowe
-
-        float f;
-
-        double doubleNumber = 10.5;
-        System.out.println(doubleNumber);
-
-        String someText = "Text";
-        System.out.println(someText);
-
-        char someChar = 'a';
-        System.out.println(someChar);
-
-        boolean trueValue = true;
-        boolean falseValue = false;
-        System.out.println(trueValue);
-        System.out.println(falseValue);
     }
 }
