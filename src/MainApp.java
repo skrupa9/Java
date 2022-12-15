@@ -4,9 +4,20 @@ public class MainApp {
 
     public static void main(String[] args) {
 
+        // Liczby całkowite
+
+        byte b;
+        short s;
+        int i;
+        long l = 2000000000000L;
+
         int number;     // deklaracja zmiennej
         number = 10;    // inicjalizacja zmiennej
         System.out.println(number);
+
+        // Liczby zmiennoprzecinkowe
+
+        float f;
 
         double doubleNumber = 10.5;
         System.out.println(doubleNumber);
