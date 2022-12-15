@@ -6,26 +6,36 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        // Operatory matematyczne
-        double a = 10;
-        double b = 4;
-        System.out.println(10 + 10);
-        System.out.println(10 - 10);
-        System.out.println(10 * 10);
-        System.out.println(10 / 10);
-        System.out.println(a / b);
-
-        // Operatory porównania
-        int numOne = 1;
+        int numOne = 3;
         int numTwo = 2;
-        System.out.println(numOne < numTwo);
-        System.out.println(numOne > numTwo);
-        System.out.println(numOne == numTwo);
-        System.out.println(numOne != numTwo);
 
-        // Operatory logiczne
-        System.out.println(numOne > numTwo || numOne == 1);     // || - lub
-        System.out.println(numOne < numTwo && numOne != 1);     // && - i
+        if (numOne < numTwo) {
+            System.out.println("number one is less than number two");
+        } else if (numOne > numTwo) {
+            System.out.println("number one is greater than number two");
+        } else {
+            System.out.println("number one is equal number two");
+        }
+
+        String homePage = "Home";
+        String loginPage = "Login";
+        String contactPage = "Contact";
+
+        String page = "Hosme";
+
+        switch (page) {
+            case "Home":
+                System.out.println("Home Page");
+                break;
+            case "Login":
+                System.out.println("Login Page");
+                break;
+            case "Contact":
+                System.out.println("Contact Page");
+                break;
+            default:
+                System.out.println("404 Page not found");
+        }
 
     }
 }
